@@ -17,12 +17,11 @@ class CreateTravelsTable extends Migration
             $table->id();
             $table->string('city', 50);
             $table->string('state', 50);
-            $table->string('hotel-name', 50);
+            $table->string('hotel_name', 50);
             $table->tinyInteger('rooms')->unsigned();
             $table->tinyInteger('stars')->unsigned();
             $table->text('description')->nullable();
             $table->integer('price')->unsigned();
-            $table->boolean('is_available')->unsigned()->default(1);
             $table->timestamps();
         });
     }
